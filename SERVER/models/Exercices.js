@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
             autoIncrement: true
         },
         libelle : {
-            type: DataTypes.DATE,
+            type: DataTypes.STRING,
             allowNull: false
         },
         createdAt: {

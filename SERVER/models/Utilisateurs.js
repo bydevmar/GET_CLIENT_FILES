@@ -1,5 +1,5 @@
 module.exports = (sequelize , DataTypes ) => {
-  const UTILISATEURS = sequelize.define( "UTILISATEURS" , {
+  const Utilisateurs = sequelize.define( "Utilisateurs" , {
     utilisateur_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -36,6 +36,6 @@ module.exports = (sequelize , DataTypes ) => {
     timestamps: true,
     paranoid: true,
   });
-  return UTILISATEURS;
+  return Utilisateurs;
 }
 

@@ -1,7 +1,7 @@
 
 
 module.exports = (sequelize, DataTypes) => {
-    const ADMINISTRATEURS = sequelize.define('ADMINISTRATEURS', {
+    const Administrateur = sequelize.define('ADMINISTRATEURS', {
       administrateur_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -48,6 +48,6 @@ module.exports = (sequelize, DataTypes) => {
       freezeTableName: true,
     });
   
-    return ADMINISTRATEURS;
+    return Administrateur;
   };
   

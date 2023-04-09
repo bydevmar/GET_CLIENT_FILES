@@ -1,11 +1,19 @@
 const express = require("express");
 const app = express();
-
-// get_client_files_db
 const db = require("./models");
+const user_routes = require("./routes/Utilisateur");
 
-db.sequelize.sync().then( () => {
-    app.listen( 3001 , () => {
-        console.log(" HELLO WORLD ! ");
-    });
+const port = 3001 || process.env.PORT
+app.listen(port, () => {
+    console.log(`app connected to ${port}`);
 });
+
+const routes = [
+    user_routes,
+];
+
+
+db.sequelize.sync().then(() => {
+    app.use(routes);
+});
+

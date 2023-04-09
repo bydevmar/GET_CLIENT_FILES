@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const ENTREPRISES_EXERCICES = sequelize.define("ENTREPRISES_EXERCICES", {
+    const Entreprises_Exercices = sequelize.define("ENTREPRISES_EXERCICES", {
         e_e_id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -35,6 +35,6 @@ module.exports = (sequelize, DataTypes) => {
             defaultValue: null
         }
     });
-    return ENTREPRISES_EXERCICES;
+    return Entreprises_Exercices;
 }
 

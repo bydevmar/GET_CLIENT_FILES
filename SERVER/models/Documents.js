@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const DOCUMENTS = sequelize.define("DOCUMENTS", {
+    const Documents = sequelize.define("DOCUMENTS", {
         document_id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -45,6 +45,6 @@ module.exports = (sequelize, DataTypes) => {
             defaultValue: null
         }
     });
-    return DOCUMENTS;
+    return Documents;
 }
 
